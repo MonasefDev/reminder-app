@@ -1,6 +1,6 @@
 import React from "react";
 import SortBy from "../../ui/SortBy";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { HiOutlineBellAlert } from "react-icons/hi2";
 
 function TableOperations({ data }) {
@@ -43,6 +43,18 @@ const SteledOperations = styled.div`
   padding-right: 4rem;
 `;
 
+const scaleUp = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
+
 const ReminderContainer = styled.div`
   position: absolute;
   top: 0;
@@ -70,6 +82,7 @@ const ReminderContainer = styled.div`
     width: 1.8rem;
     height: 1.8rem;
     border-radius: 50%;
+    animation: ${scaleUp} 1s infinite;
   }
 `;
 
