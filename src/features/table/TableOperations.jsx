@@ -56,6 +56,7 @@ const ReminderContainer = styled.div`
   svg {
     width: 2.4rem;
     height: 2.4rem;
+    color: var(--color-grey-1);
   }
   span {
     position: absolute;

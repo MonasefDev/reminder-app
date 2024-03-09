@@ -27,7 +27,7 @@ function TableRow({ itemsRow }) {
                 // onClick={handleDuplicate}
                 // disabled={isCreating}
               >
-                Duplicate
+                Action
               </Menus.Button>
 
               <Modal.Open opens="edit">
